@@ -4,10 +4,10 @@
 6/9/2024
 
 ### Project Title
-Replace the Project Title
+git Project
 
 ### Description
-Describe what your project is about and what it does
+This project help to understand the fundementals of git and github
 
 ### Files used
 Include the files used
