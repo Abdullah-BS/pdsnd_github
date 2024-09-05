@@ -10,8 +10,10 @@ git Project
 This project help to understand the fundementals of git and github
 
 ### Files used
-Include the files used
+[text](bikeshare_2.py)
+[text](chicago.csv)
+[text](new_york_city.csv)
+[text](washington.csv)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Forked from https://github.com/udacity/pdsnd_github
