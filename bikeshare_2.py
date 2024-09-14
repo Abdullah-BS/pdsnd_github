@@ -95,6 +95,7 @@ def get_filters():
     return city, month, day
 
 
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -123,6 +124,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
 
     return df
+
 
 
 def time_stats(df):
@@ -170,6 +172,7 @@ def time_stats(df):
     print('-'*40)
 
 
+
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -197,6 +200,7 @@ def station_stats(df):
     print('-'*40)
 
 
+
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -214,6 +218,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def user_stats(df):
@@ -250,7 +255,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     
-    
+
+
 def display_data(df):
     """
     Asks the user if they want to see 5 rows of data at a time, continuing until the user says 'no' or until all data is shown.
@@ -268,7 +274,6 @@ def display_data(df):
         print(df.iloc[start_loc:start_loc + 5])
         start_loc += 5 
         view_data = input('\nDo you wish to continue? Enter yes or no: ').lower()
-
 
 
 
