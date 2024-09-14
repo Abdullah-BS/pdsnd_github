@@ -40,16 +40,22 @@ def get_filters():
     
     if month == 1:
         month = "January"
+        
     elif month == 2:
         month = "February"
+        
     elif month == 3:
         month = "March"
+        
     elif month == 4:
         month = "April"
+        
     elif month == 5:
         month = "May"
+        
     elif month == 6:
         month = "June"
+        
     else:
         month = "All"
     
@@ -63,18 +69,25 @@ def get_filters():
     
     if day == 1:
         day = "Monday"
+        
     elif day == 2:
         day = "Tuesday"
+        
     elif day == 3:
         day = "Wednesday"
+        
     elif day == 4:
         day = "Thursday"
+        
     elif day == 5:
         day = "Friday"
+        
     elif day == 6:
         day = "Saturday"
+        
     elif day == 7:
         day = "Sunday"
+        
     else:
         day = "All"
 
@@ -123,14 +136,19 @@ def time_stats(df):
     
     if common_month == 1:
         common_month = "January"
+        
     elif common_month == 2:
         common_month = "February"
+        
     elif common_month == 3:
         common_month = "March"
+        
     elif common_month == 4:
         common_month = "April"
+        
     elif common_month == 5:
         common_month = "May"
+        
     else:
         common_month = "June"
     
