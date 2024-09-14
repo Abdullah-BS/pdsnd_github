@@ -6,6 +6,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York': 'new_york_city.csv',
               'Washington': 'washington.csv' }
 
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -40,16 +41,22 @@ def get_filters():
     
     if month == 1:
         month = "January"
+        
     elif month == 2:
         month = "February"
+        
     elif month == 3:
         month = "March"
+        
     elif month == 4:
         month = "April"
+        
     elif month == 5:
         month = "May"
+        
     elif month == 6:
         month = "June"
+        
     else:
         month = "All"
     
@@ -63,23 +70,32 @@ def get_filters():
     
     if day == 1:
         day = "Monday"
+        
     elif day == 2:
         day = "Tuesday"
+        
     elif day == 3:
         day = "Wednesday"
+        
     elif day == 4:
         day = "Thursday"
+        
     elif day == 5:
         day = "Friday"
+        
     elif day == 6:
         day = "Saturday"
+        
     elif day == 7:
         day = "Sunday"
+        
     else:
         day = "All"
 
     print('-'*40)
     return city, month, day
+
+
 
 
 def load_data(city, month, day):
@@ -112,6 +128,8 @@ def load_data(city, month, day):
     return df
 
 
+
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -123,14 +141,19 @@ def time_stats(df):
     
     if common_month == 1:
         common_month = "January"
+        
     elif common_month == 2:
         common_month = "February"
+        
     elif common_month == 3:
         common_month = "March"
+        
     elif common_month == 4:
         common_month = "April"
+        
     elif common_month == 5:
         common_month = "May"
+        
     else:
         common_month = "June"
     
@@ -150,6 +173,7 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def station_stats(df):
@@ -179,6 +203,7 @@ def station_stats(df):
     print('-'*40)
 
 
+
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -196,6 +221,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def user_stats(df):
@@ -232,7 +258,8 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     
-    
+
+
 def display_data(df):
     """
     Asks the user if they want to see 5 rows of data at a time, continuing until the user says 'no' or until all data is shown.
@@ -250,7 +277,6 @@ def display_data(df):
         print(df.iloc[start_loc:start_loc + 5])
         start_loc += 5 
         view_data = input('\nDo you wish to continue? Enter yes or no: ').lower()
-
 
 
 
